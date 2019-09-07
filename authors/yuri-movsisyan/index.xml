@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yuri Movsisyan | Mher Safaryan</title>
+    <link>https://mher-safaryan.github.io/authors/yuri-movsisyan/</link>
+      <atom:link href="https://mher-safaryan.github.io/authors/yuri-movsisyan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yuri Movsisyan</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 01 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mher-safaryan.github.io/img/icon-192.png</url>
+      <title>Yuri Movsisyan</title>
+      <link>https://mher-safaryan.github.io/authors/yuri-movsisyan/</link>
+    </image>
+    
+    <item>
+      <title>Construction of free g-dimonoids</title>
+      <link>https://mher-safaryan.github.io/publication/g-dimonoids/</link>
+      <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>https://mher-safaryan.github.io/publication/g-dimonoids/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
