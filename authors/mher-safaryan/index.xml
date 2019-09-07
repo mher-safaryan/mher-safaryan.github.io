@@ -5,12 +5,20 @@
     <link>https://mher-safaryan.github.io/authors/mher-safaryan/</link>
       <atom:link href="https://mher-safaryan.github.io/authors/mher-safaryan/index.xml" rel="self" type="application/rss+xml" />
     <description>Mher Safaryan</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mher-safaryan.github.io/img/icon-192.png</url>
       <title>Mher Safaryan</title>
       <link>https://mher-safaryan.github.io/authors/mher-safaryan/</link>
     </image>
+    
+    <item>
+      <title>On Stochastic Sign Descent Methods</title>
+      <link>https://mher-safaryan.github.io/publication/signsgd/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://mher-safaryan.github.io/publication/signsgd/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>On Generalizations of Fatou&#39;s Theorem in $L^p$ for Convolution Integrals with General Kernels</title>

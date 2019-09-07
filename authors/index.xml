@@ -5,7 +5,7 @@
     <link>https://mher-safaryan.github.io/authors/</link>
       <atom:link href="https://mher-safaryan.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mher-safaryan.github.io/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,8 +15,16 @@
     <item>
       <title>Mher Safaryan</title>
       <link>https://mher-safaryan.github.io/authors/mher-safaryan/</link>
-      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       <guid>https://mher-safaryan.github.io/authors/mher-safaryan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Peter Richtárik</title>
+      <link>https://mher-safaryan.github.io/authors/peter-richtarik/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://mher-safaryan.github.io/authors/peter-richtarik/</guid>
       <description></description>
     </item>
     
