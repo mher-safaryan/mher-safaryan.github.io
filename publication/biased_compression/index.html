@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Various gradient compression schemes have been proposed to mitigate the communication cost in distributed training of large scale machine learning models. Sign-based methods, such as signSGD, have recently been gaining popularity because of their simple compression rule and connection to adaptive gradient methods, like ADAM. In this paper, we perform a general analysis of sign-based methods for non-convex optimization. Our analysis is built on intuitive bounds on success probabilities and does not rely on special noise distributions nor on the boundedness of the variance of stochastic gradients. Extending the theory to distributed setting within a parameter server framework, we assure variance reduction with respect to number of nodes, maintaining 1-bit compression in both directions and using small mini-batch sizes. We validate our theoretical findings experimentally.">
+  <meta name="description" content="In the last few years, various communication  compression techniques have  emerged  as an indispensable  tool helping to alleviate the communication bottleneck in distributed learning. However, despite the fact biased compressors often show superior performance in practice when compared to the much more studied and understood unbiased compressors,  very little is known about them. In this work we study three classes of biased compression operators, two of which are new, and their performance when applied to  (stochastic) gradient descent and distributed (stochastic) gradient descent.  We show for the first time that biased compressors can lead to linear convergence rates both in the single node and distributed settings. Our distributed SGD method  enjoys the ergodic rate O(δL/μ exp(-K) &#43; (C &#43; D)/(Kμ)), where δ is a compression parameter which grows when more compression is applied, L and μ are the smoothness and strong convexity constants, C captures stochastic gradient noise (C=0 if full gradients are computed on each node) and C captures the variance of the gradients at the optimum (C=0 for over-parameterized models).  Further,  via a theoretical study of several synthetic and empirical distributions of communicated gradients, we shed light on why and by how much  biased compressors outperform  their unbiased variants.  Finally, we  propose a new highly performing biased compressor---combination of Top-k and natural dithering---which in our experiments outperforms all other compression techniques.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://mher-safaryan.github.io/publication/signsgd/">
+  <link rel="alternate" hreflang="en-us" href="https://mher-safaryan.github.io/publication/biased_compression/">
 
   
 
@@ -94,7 +94,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://mher-safaryan.github.io/publication/signsgd/">
+  <link rel="canonical" href="https://mher-safaryan.github.io/publication/biased_compression/">
 
   
   
@@ -107,15 +107,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Mher Safaryan">
-  <meta property="og:url" content="https://mher-safaryan.github.io/publication/signsgd/">
-  <meta property="og:title" content="On Stochastic Sign Descent Methods | Mher Safaryan">
-  <meta property="og:description" content="Various gradient compression schemes have been proposed to mitigate the communication cost in distributed training of large scale machine learning models. Sign-based methods, such as signSGD, have recently been gaining popularity because of their simple compression rule and connection to adaptive gradient methods, like ADAM. In this paper, we perform a general analysis of sign-based methods for non-convex optimization. Our analysis is built on intuitive bounds on success probabilities and does not rely on special noise distributions nor on the boundedness of the variance of stochastic gradients. Extending the theory to distributed setting within a parameter server framework, we assure variance reduction with respect to number of nodes, maintaining 1-bit compression in both directions and using small mini-batch sizes. We validate our theoretical findings experimentally."><meta property="og:image" content="https://mher-safaryan.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://mher-safaryan.github.io/publication/biased_compression/">
+  <meta property="og:title" content="On Biased Compression for Distributed Learning | Mher Safaryan">
+  <meta property="og:description" content="In the last few years, various communication  compression techniques have  emerged  as an indispensable  tool helping to alleviate the communication bottleneck in distributed learning. However, despite the fact biased compressors often show superior performance in practice when compared to the much more studied and understood unbiased compressors,  very little is known about them. In this work we study three classes of biased compression operators, two of which are new, and their performance when applied to  (stochastic) gradient descent and distributed (stochastic) gradient descent.  We show for the first time that biased compressors can lead to linear convergence rates both in the single node and distributed settings. Our distributed SGD method  enjoys the ergodic rate O(δL/μ exp(-K) &#43; (C &#43; D)/(Kμ)), where δ is a compression parameter which grows when more compression is applied, L and μ are the smoothness and strong convexity constants, C captures stochastic gradient noise (C=0 if full gradients are computed on each node) and C captures the variance of the gradients at the optimum (C=0 for over-parameterized models).  Further,  via a theoretical study of several synthetic and empirical distributions of communicated gradients, we shed light on why and by how much  biased compressors outperform  their unbiased variants.  Finally, we  propose a new highly performing biased compressor---combination of Top-k and natural dithering---which in our experiments outperforms all other compression techniques."><meta property="og:image" content="https://mher-safaryan.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://mher-safaryan.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-05-30T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-02-27T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-05-30T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-02-27T00:00:00&#43;00:00">
   
 
   
@@ -127,7 +127,7 @@
 
 
 
-  <title>On Stochastic Sign Descent Methods | Mher Safaryan</title>
+  <title>On Biased Compression for Distributed Learning | Mher Safaryan</title>
 
 </head>
 
@@ -360,7 +360,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">On Stochastic Sign Descent Methods</h1>
+  <h1 itemprop="name">On Biased Compression for Distributed Learning</h1>
 
   
 
@@ -369,8 +369,8 @@
 
 
 
-<meta content="2019-05-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-05-30 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="2020-02-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-02-27 00:00:00 &#43;0000 UTC" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -383,7 +383,7 @@
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/mher-safaryan/">Mher Safaryan</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/peter-richtarik/">Peter Richtárik</a></span>
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/aleksandr-beznosikov/">Aleksandr Beznosikov</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/samuel-horvath/">Samuel Horváth</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/peter-richtarik/">Peter Richtárik</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/mher-safaryan/">Mher Safaryan</a></span>
 
   </div>
   
@@ -395,7 +395,7 @@
     
       
     
-    <time>May 2019</time>
+    <time>February 2020</time>
   </span>
   
 
@@ -423,7 +423,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://mher-safaryan.github.io/publication/signsgd/&amp;text=On%20Stochastic%20Sign%20Descent%20Methods" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://mher-safaryan.github.io/publication/biased_compression/&amp;text=On%20Biased%20Compression%20for%20Distributed%20Learning" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -436,7 +436,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://mher-safaryan.github.io/publication/signsgd/&amp;t=On%20Stochastic%20Sign%20Descent%20Methods" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://mher-safaryan.github.io/publication/biased_compression/&amp;t=On%20Biased%20Compression%20for%20Distributed%20Learning" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -449,7 +449,7 @@
       
       
       <li>
-        <a href="mailto:?subject=On%20Stochastic%20Sign%20Descent%20Methods&amp;body=https://mher-safaryan.github.io/publication/signsgd/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=On%20Biased%20Compression%20for%20Distributed%20Learning&amp;body=https://mher-safaryan.github.io/publication/biased_compression/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -462,7 +462,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://mher-safaryan.github.io/publication/signsgd/&amp;title=On%20Stochastic%20Sign%20Descent%20Methods" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://mher-safaryan.github.io/publication/biased_compression/&amp;title=On%20Biased%20Compression%20for%20Distributed%20Learning" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -475,7 +475,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=On%20Stochastic%20Sign%20Descent%20Methods%20https://mher-safaryan.github.io/publication/signsgd/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=On%20Biased%20Compression%20for%20Distributed%20Learning%20https://mher-safaryan.github.io/publication/biased_compression/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -488,7 +488,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://mher-safaryan.github.io/publication/signsgd/&amp;title=On%20Stochastic%20Sign%20Descent%20Methods" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://mher-safaryan.github.io/publication/biased_compression/&amp;title=On%20Biased%20Compression%20for%20Distributed%20Learning" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -532,7 +532,7 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/1905.12938.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/2002.12410" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -564,7 +564,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Various gradient compression schemes have been proposed to mitigate the communication cost in distributed training of large scale machine learning models. Sign-based methods, such as signSGD, have recently been gaining popularity because of their simple compression rule and connection to adaptive gradient methods, like ADAM. In this paper, we perform a general analysis of sign-based methods for non-convex optimization. Our analysis is built on intuitive bounds on success probabilities and does not rely on special noise distributions nor on the boundedness of the variance of stochastic gradients. Extending the theory to distributed setting within a parameter server framework, we assure variance reduction with respect to number of nodes, maintaining 1-bit compression in both directions and using small mini-batch sizes. We validate our theoretical findings experimentally.</p>
+    <p class="pub-abstract" itemprop="text">In the last few years, various communication  compression techniques have  emerged  as an indispensable  tool helping to alleviate the communication bottleneck in distributed learning. However, despite the fact biased compressors often show superior performance in practice when compared to the much more studied and understood unbiased compressors,  very little is known about them. In this work we study three classes of biased compression operators, two of which are new, and their performance when applied to  (stochastic) gradient descent and distributed (stochastic) gradient descent.  We show for the first time that biased compressors can lead to linear convergence rates both in the single node and distributed settings. Our distributed SGD method  enjoys the ergodic rate O(δL/μ exp(-K) + (C + D)/(Kμ)), where δ is a compression parameter which grows when more compression is applied, L and μ are the smoothness and strong convexity constants, C captures stochastic gradient noise (C=0 if full gradients are computed on each node) and C captures the variance of the gradients at the optimum (C=0 for over-parameterized models).  Further,  via a theoretical study of several synthetic and empirical distributions of communicated gradients, we shed light on why and by how much  biased compressors outperform  their unbiased variants.  Finally, we  propose a new highly performing biased compressor&mdash;combination of Top-k and natural dithering&mdash;which in our experiments outperforms all other compression techniques.</p>
     
 
     
@@ -617,7 +617,7 @@
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="/authors/mher-safaryan/"></a></h5>
+      <h5 class="card-title" itemprop="name"><a href="/authors/aleksandr-beznosikov/"></a></h5>
       
       
       <ul class="network-icon" aria-hidden="true">
