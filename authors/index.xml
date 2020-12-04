@@ -5,7 +5,7 @@
     <link>https://mher-safaryan.github.io/authors/</link>
       <atom:link href="https://mher-safaryan.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Wed, 07 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mher-safaryan.github.io/img/icon-192.png</url>
       <title>Authors</title>
@@ -13,17 +13,25 @@
     </image>
     
     <item>
-      <title>Aleksandr Beznosikov</title>
-      <link>https://mher-safaryan.github.io/authors/aleksandr-beznosikov/</link>
-      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://mher-safaryan.github.io/authors/aleksandr-beznosikov/</guid>
+      <title>Alyazeed Albasyoni</title>
+      <link>https://mher-safaryan.github.io/authors/alyazeed-albasyoni/</link>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://mher-safaryan.github.io/authors/alyazeed-albasyoni/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laurent Condat</title>
+      <link>https://mher-safaryan.github.io/authors/laurent-condat/</link>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://mher-safaryan.github.io/authors/laurent-condat/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mher Safaryan</title>
       <link>https://mher-safaryan.github.io/authors/mher-safaryan/</link>
-      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://mher-safaryan.github.io/authors/mher-safaryan/</guid>
       <description></description>
     </item>
@@ -31,8 +39,16 @@
     <item>
       <title>Peter Richtárik</title>
       <link>https://mher-safaryan.github.io/authors/peter-richtarik/</link>
-      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://mher-safaryan.github.io/authors/peter-richtarik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aleksandr Beznosikov</title>
+      <link>https://mher-safaryan.github.io/authors/aleksandr-beznosikov/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://mher-safaryan.github.io/authors/aleksandr-beznosikov/</guid>
       <description></description>
     </item>
     

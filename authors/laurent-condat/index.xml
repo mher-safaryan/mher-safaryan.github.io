@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Laurent Condat | Mher Safaryan</title>
+    <link>https://mher-safaryan.github.io/authors/laurent-condat/</link>
+      <atom:link href="https://mher-safaryan.github.io/authors/laurent-condat/index.xml" rel="self" type="application/rss+xml" />
+    <description>Laurent Condat</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Wed, 07 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mher-safaryan.github.io/img/icon-192.png</url>
+      <title>Laurent Condat</title>
+      <link>https://mher-safaryan.github.io/authors/laurent-condat/</link>
+    </image>
+    
+    <item>
+      <title>Optimal Gradient Compression for Distributed and Federated Learning</title>
+      <link>https://mher-safaryan.github.io/publication/optimal_compression/</link>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://mher-safaryan.github.io/publication/optimal_compression/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
