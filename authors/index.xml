@@ -5,12 +5,36 @@
     <link>https://mher-safaryan.github.io/authors/</link>
       <atom:link href="https://mher-safaryan.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Wed, 07 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mher-safaryan.github.io/img/icon-192.png</url>
       <title>Authors</title>
       <link>https://mher-safaryan.github.io/authors/</link>
     </image>
+    
+    <item>
+      <title>Filip Hanzely</title>
+      <link>https://mher-safaryan.github.io/authors/filip-hanzely/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://mher-safaryan.github.io/authors/filip-hanzely/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mher Safaryan</title>
+      <link>https://mher-safaryan.github.io/authors/mher-safaryan/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://mher-safaryan.github.io/authors/mher-safaryan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Peter Richtárik</title>
+      <link>https://mher-safaryan.github.io/authors/peter-richtarik/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://mher-safaryan.github.io/authors/peter-richtarik/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Alyazeed Albasyoni</title>
@@ -25,22 +49,6 @@
       <link>https://mher-safaryan.github.io/authors/laurent-condat/</link>
       <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
       <guid>https://mher-safaryan.github.io/authors/laurent-condat/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mher Safaryan</title>
-      <link>https://mher-safaryan.github.io/authors/mher-safaryan/</link>
-      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://mher-safaryan.github.io/authors/mher-safaryan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Peter Richtárik</title>
-      <link>https://mher-safaryan.github.io/authors/peter-richtarik/</link>
-      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://mher-safaryan.github.io/authors/peter-richtarik/</guid>
       <description></description>
     </item>
     

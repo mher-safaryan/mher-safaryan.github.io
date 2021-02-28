@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Various gradient compression schemes have been proposed to mitigate the communication cost in distributed training of large scale machine learning models. Sign-based methods, such as signSGD, have recently been gaining popularity because of their simple compression rule and connection to adaptive gradient methods, like ADAM. In this paper, we perform a general analysis of sign-based methods for non-convex optimization. Our analysis is built on intuitive bounds on success probabilities and does not rely on special noise distributions nor on the boundedness of the variance of stochastic gradients. Extending the theory to distributed setting within a parameter server framework, we assure variance reduction with respect to number of nodes, maintaining 1-bit compression in both directions and using small mini-batch sizes. We validate our theoretical findings experimentally.">
+  <meta name="description" content="Various gradient compression schemes have been proposed to mitigate the communication cost in distributed training of large scale machine learning models. Sign-based methods, such as signSGD, have recently been gaining popularity because of their simple compression rule and connection to adaptive gradient methods, like ADAM. In this paper, we analyze sign-based methods for non-convex optimization in three key settings: (i) standard single node, (ii) parallel with shared data and (iii) distributed with partitioned data. For single machine case, we generalize the previous analysis of signSGD relying on intuitive bounds on success probabilities and allowing even biased estimators. Furthermore, we extend the analysis to parallel setting within a parameter server framework, where exponentially fast noise reduction is guaranteed with respect to number of nodes, maintaining 1-bit compression in both directions and using small mini-batch sizes. Next, we identify a fundamental issue with signSGD to converge in distributed environment. To resolve this issue, we propose a new sign-based method, {m Stochastic Sign Descent with Momentum (SSDM)}, which converges under standard bounded variance assumption with the optimal asymptotic rate. We validate several aspects of our theoretical findings with numerical experiments.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://mher-safaryan.github.io/publication/signsgd/">
@@ -108,8 +108,8 @@
   
   <meta property="og:site_name" content="Mher Safaryan">
   <meta property="og:url" content="https://mher-safaryan.github.io/publication/signsgd/">
-  <meta property="og:title" content="On Stochastic Sign Descent Methods | Mher Safaryan">
-  <meta property="og:description" content="Various gradient compression schemes have been proposed to mitigate the communication cost in distributed training of large scale machine learning models. Sign-based methods, such as signSGD, have recently been gaining popularity because of their simple compression rule and connection to adaptive gradient methods, like ADAM. In this paper, we perform a general analysis of sign-based methods for non-convex optimization. Our analysis is built on intuitive bounds on success probabilities and does not rely on special noise distributions nor on the boundedness of the variance of stochastic gradients. Extending the theory to distributed setting within a parameter server framework, we assure variance reduction with respect to number of nodes, maintaining 1-bit compression in both directions and using small mini-batch sizes. We validate our theoretical findings experimentally."><meta property="og:image" content="https://mher-safaryan.github.io/img/icon-192.png">
+  <meta property="og:title" content="Stochastic Sign Descent Methods: New Algorithms and Better Theory | Mher Safaryan">
+  <meta property="og:description" content="Various gradient compression schemes have been proposed to mitigate the communication cost in distributed training of large scale machine learning models. Sign-based methods, such as signSGD, have recently been gaining popularity because of their simple compression rule and connection to adaptive gradient methods, like ADAM. In this paper, we analyze sign-based methods for non-convex optimization in three key settings: (i) standard single node, (ii) parallel with shared data and (iii) distributed with partitioned data. For single machine case, we generalize the previous analysis of signSGD relying on intuitive bounds on success probabilities and allowing even biased estimators. Furthermore, we extend the analysis to parallel setting within a parameter server framework, where exponentially fast noise reduction is guaranteed with respect to number of nodes, maintaining 1-bit compression in both directions and using small mini-batch sizes. Next, we identify a fundamental issue with signSGD to converge in distributed environment. To resolve this issue, we propose a new sign-based method, {m Stochastic Sign Descent with Momentum (SSDM)}, which converges under standard bounded variance assumption with the optimal asymptotic rate. We validate several aspects of our theoretical findings with numerical experiments."><meta property="og:image" content="https://mher-safaryan.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://mher-safaryan.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
@@ -127,7 +127,7 @@
 
 
 
-  <title>On Stochastic Sign Descent Methods | Mher Safaryan</title>
+  <title>Stochastic Sign Descent Methods: New Algorithms and Better Theory | Mher Safaryan</title>
 
 </head>
 
@@ -360,7 +360,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">On Stochastic Sign Descent Methods</h1>
+  <h1 itemprop="name">Stochastic Sign Descent Methods: New Algorithms and Better Theory</h1>
 
   
 
@@ -423,7 +423,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://mher-safaryan.github.io/publication/signsgd/&amp;text=On%20Stochastic%20Sign%20Descent%20Methods" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://mher-safaryan.github.io/publication/signsgd/&amp;text=Stochastic%20Sign%20Descent%20Methods:%20New%20Algorithms%20and%20Better%20Theory" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -436,7 +436,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://mher-safaryan.github.io/publication/signsgd/&amp;t=On%20Stochastic%20Sign%20Descent%20Methods" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://mher-safaryan.github.io/publication/signsgd/&amp;t=Stochastic%20Sign%20Descent%20Methods:%20New%20Algorithms%20and%20Better%20Theory" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -449,7 +449,7 @@
       
       
       <li>
-        <a href="mailto:?subject=On%20Stochastic%20Sign%20Descent%20Methods&amp;body=https://mher-safaryan.github.io/publication/signsgd/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Stochastic%20Sign%20Descent%20Methods:%20New%20Algorithms%20and%20Better%20Theory&amp;body=https://mher-safaryan.github.io/publication/signsgd/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -462,7 +462,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://mher-safaryan.github.io/publication/signsgd/&amp;title=On%20Stochastic%20Sign%20Descent%20Methods" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://mher-safaryan.github.io/publication/signsgd/&amp;title=Stochastic%20Sign%20Descent%20Methods:%20New%20Algorithms%20and%20Better%20Theory" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -475,7 +475,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=On%20Stochastic%20Sign%20Descent%20Methods%20https://mher-safaryan.github.io/publication/signsgd/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Stochastic%20Sign%20Descent%20Methods:%20New%20Algorithms%20and%20Better%20Theory%20https://mher-safaryan.github.io/publication/signsgd/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -488,7 +488,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://mher-safaryan.github.io/publication/signsgd/&amp;title=On%20Stochastic%20Sign%20Descent%20Methods" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://mher-safaryan.github.io/publication/signsgd/&amp;title=Stochastic%20Sign%20Descent%20Methods:%20New%20Algorithms%20and%20Better%20Theory" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -609,7 +609,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Various gradient compression schemes have been proposed to mitigate the communication cost in distributed training of large scale machine learning models. Sign-based methods, such as signSGD, have recently been gaining popularity because of their simple compression rule and connection to adaptive gradient methods, like ADAM. In this paper, we perform a general analysis of sign-based methods for non-convex optimization. Our analysis is built on intuitive bounds on success probabilities and does not rely on special noise distributions nor on the boundedness of the variance of stochastic gradients. Extending the theory to distributed setting within a parameter server framework, we assure variance reduction with respect to number of nodes, maintaining 1-bit compression in both directions and using small mini-batch sizes. We validate our theoretical findings experimentally.</p>
+    <p class="pub-abstract" itemprop="text">Various gradient compression schemes have been proposed to mitigate the communication cost in distributed training of large scale machine learning models. Sign-based methods, such as signSGD, have recently been gaining popularity because of their simple compression rule and connection to adaptive gradient methods, like ADAM. In this paper, we analyze sign-based methods for non-convex optimization in three key settings: (i) standard single node, (ii) parallel with shared data and (iii) distributed with partitioned data. For single machine case, we generalize the previous analysis of signSGD relying on intuitive bounds on success probabilities and allowing even biased estimators. Furthermore, we extend the analysis to parallel setting within a parameter server framework, where exponentially fast noise reduction is guaranteed with respect to number of nodes, maintaining 1-bit compression in both directions and using small mini-batch sizes. Next, we identify a fundamental issue with signSGD to converge in distributed environment. To resolve this issue, we propose a new sign-based method, {m Stochastic Sign Descent with Momentum (SSDM)}, which converges under standard bounded variance assumption with the optimal asymptotic rate. We validate several aspects of our theoretical findings with numerical experiments.</p>
     
 
     
@@ -799,7 +799,7 @@
   
 
   <p class="powered-by">
-    &copy; 2020 &middot; 
+    &copy; 2021 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
