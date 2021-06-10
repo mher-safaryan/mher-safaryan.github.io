@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rustem Islamov | Mher Safaryan</title>
+    <link>https://mher-safaryan.github.io/authors/rustem-islamov/</link>
+      <atom:link href="https://mher-safaryan.github.io/authors/rustem-islamov/index.xml" rel="self" type="application/rss+xml" />
+    <description>Rustem Islamov</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021</copyright><lastBuildDate>Sat, 05 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mher-safaryan.github.io/img/icon-192.png</url>
+      <title>Rustem Islamov</title>
+      <link>https://mher-safaryan.github.io/authors/rustem-islamov/</link>
+    </image>
+    
+    <item>
+      <title>FedNL: Making Newton-Type Methods Applicable to Federated Learning</title>
+      <link>https://mher-safaryan.github.io/publication/fednl/</link>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://mher-safaryan.github.io/publication/fednl/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
