@@ -1,1 +1,0 @@
-# mher-safaryan.github.io
