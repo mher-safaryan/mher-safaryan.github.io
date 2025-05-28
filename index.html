@@ -106,6 +106,15 @@
 									<h2>News</h2>
 									<div class="features">
 										<article>
+											<a class="image"><img src="images/arxiv_logo.jpg" alt="" /></a>
+											<div class="inner">
+												<span>May 2025</span>
+												<h4>New paper on arXiv.</h4>
+												<p><a href="https://arxiv.org/abs/2505.17967">SVD-Free Low-Rank Adaptive Gradient Optimization for Large Language Models</a> - joint work with Ionut-Vlad Modoranu, Erik Schultheis, Dan Alistarh.</p>
+												<p>Abstract: <em>Low-rank optimization has emerged as a promising direction in training large language models (LLMs) to reduce the memory usage of adaptive optimizers by constraining learning to a lower-dimensional space. Prior work typically projects gradients of linear layers using approaches based on Singular Value Decomposition (SVD). However, applying SVD-based procedures individually to each layer in large models is computationally expensive and incurs additional memory costs due to storing the projection matrices. In this work, we propose a computationally efficient and conceptually simple two-step procedure to approximate SVD-based gradient projections into lower-dimensional spaces. First, we construct a complete orthogonal basis using predefined orthogonal matrices of the Discrete Cosine Transform (DCT). Second, we adaptively select basis columns based on their alignment with the gradient of each layer. Each projection matrix in our method is obtained via a single matrix multiplication followed by a lightweight sorting step to identify the most relevant basis vectors. Due to the predefined nature of the orthogonal bases, they are computed once at the start of training. During training, we store only the indices of the selected columns, avoiding the need to store full projection matrices for each layer. Our numerical experiments on both pre-training and fine-tuning tasks demonstrate the effectiveness of our dual strategy in approximating optimal low-rank projections, matching the performance of costly SVD-based methods while achieving faster runtime and reduced memory usage.</em><p/>
+											</div>
+										</article>
+										<article>
 											<a class="image"><img src="images/ICLR_logo.svg" alt="" /></a>
 											<div class="inner">
 												<span>January 2025</span>
