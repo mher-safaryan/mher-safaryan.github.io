@@ -106,6 +106,15 @@
 									<h2>News</h2>
 									<div class="features">
 										<article>
+											<a class="image"><img src="images/arxiv_logo.jpg" alt="" /></a>
+											<div class="inner">
+												<span>October 2025</span>
+												<h4>New paper on arXiv.</h4>
+												<p><a href="https://arxiv.org/abs/2510.05361">MT-DAO: Multi-Timescale Distributed Adaptive Optimizers with Local Updates</a> - joint work with Alex Iacob, Andrej Jovanovic, Meghdad Kurmanji, Lorenzo Sani, Samuel Horváth, William F. Shen, Xinchi Qiu, Nicholas D. Lane.</p>
+												<p>Abstract: <em>Training large models with distributed data parallelism (DDP) requires frequent communication of gradients across workers, which can saturate bandwidth. Infrequent communication strategies (e.g., Local SGD) reduce this overhead but, when applied to adaptive optimizers, often suffer a performance gap relative to fully synchronous DDP. We trace this gap to a time-scale mismatch: the optimizer's fast-moving momentum, tuned for frequent updates, decays too quickly to smooth gradients over long intervals, leading to noise-dominated optimization. To address this, we propose MT-DAO, a family of optimizers that employs multiple slow- and fast-moving first momenta or the gradient to track update dynamics across different time scales, for which we provide the first convergence guarantees. Empirically, for language-model pre-training, this eliminates the performance gap with DDP, outperforming infrequent-communication baselines in perplexity and reducing iso-token wall-clock time by 6-27% on Ethernet interconnects. At the 720M scale, MT-DAO reaches a target perplexity in 24% fewer steps and 35% less time than the single-momentum DDP baseline. MT-DAO enables effective cross-datacenter training and training over wide geographic areas.</em><p/>
+											</div>
+										</article>
+										<article>
 											<a class="image"><img src="images/NeurIPS_logo.png" alt="" /></a>
 											<div class="inner">
 												<span>September 2025</span>
